@@ -1,0 +1,125 @@
+.test {
+  margin-top: 50px;
+  margin-bottom: 46px;
+
+  &__progress {
+    &-count {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      &-img {
+        width: 26px;
+        height: auto;
+      }
+
+      &-description {
+        color: #727272;
+        font-size: 17px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  &__questions {
+    margin-top: 18px;
+    border: 1px solid #D4D4D4;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      display: flex;
+      background-color: #7B92E6;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      padding-left: 32px;
+      padding-right: 24px;
+      height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-description {
+        width: 480px;
+      }
+
+      &-values {
+        display: flex;
+      }
+
+      // Желательно придумать, как сделать единый gap, но под дизайн не очень идет.
+      &-value {
+        &:nth-child(5) {
+          margin-left: 23px;
+        }
+        &:nth-child(4) {
+          margin-left: 24px;
+        }
+        &:nth-child(3) {
+          margin-left: 27px;
+        }
+        &:nth-child(2) {
+          margin-left: 34px;
+        }
+      }
+    }
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 32px;
+    padding-right: 48px;
+
+    &-text {
+      width: 440px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5em;
+      color: #727272;
+      overflow-wrap: break-word;
+    }
+
+    &-values {
+      display: flex;
+      gap: 78px;
+    }
+
+    &:nth-child(odd) {
+      background-color: #FFFFFF;
+    }
+
+    &:nth-child(even) {
+      background-color: #F3F3F3;
+    }
+
+    &:last-child {
+      background-color: #F6F6F6;
+    }
+  }
+
+  &__submit {
+    align-self: center;
+    padding: 0;
+    width: 224px;
+    height: 55px;
+    background-color: transparent;
+    color: #E5B120;
+    text-transform: uppercase;
+    border: 2px solid #E5B120;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+}
