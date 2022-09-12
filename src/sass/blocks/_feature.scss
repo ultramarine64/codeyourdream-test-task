@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__icon {
+    width: 32px;
+    height: auto;
+  }
+
+  &__description {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+}
