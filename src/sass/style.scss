@@ -6,6 +6,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 body, p {
   margin: 0;
   padding: 0;
@@ -13,5 +17,9 @@ body, p {
 
 @import "base/fonts";
 @import "base/colors";
+@import "blocks/container";
+@import "blocks/menu";
+@import "blocks/logo";
+@import "blocks/header";
 
 @import "media";

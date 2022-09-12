@@ -1,0 +1,31 @@
+.header {
+  &__menu-and-logo-container {
+    padding: 30px 242px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #EDB61B;
+    padding-left: 54px;
+    width: 460px;
+    height: 42px;
+
+    &-link {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      padding: 5px;
+    }
+  }
+}

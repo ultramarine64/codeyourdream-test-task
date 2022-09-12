@@ -1,0 +1,33 @@
+.menu {
+  &_header {
+    margin-top: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 0 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3D3D3D;
+    transition: 0.05s all;
+    padding: 4px;
+
+    &:hover,
+    &:active {
+      color: #E4AF1A;
+      border-bottom: 2px solid #E4AF1A;
+    }
+  }
+}
