@@ -1,0 +1,31 @@
+.about {
+  border-bottom: 1px solid #D8D8D8;
+
+  &-container {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E4AF1A;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      line-height: none;
+      padding-left: 12px;
+      content: url("../images/test/test-arrow.png");
+      width: 18px;
+      height: auto;
+    }
+  }
+}
