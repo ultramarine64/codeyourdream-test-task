@@ -1,9 +1,10 @@
 .about {
+  background-color: #F4F4F4;
   border-bottom: 1px solid #D8D8D8;
 
   &-container {
-    margin-top: 28px;
-    margin-bottom: 14px;
+    padding-top: 28px;
+    padding-bottom: 14px;
     display: flex;
     justify-content: center;
   }

@@ -1,6 +1,11 @@
 .test {
-  margin-top: 50px;
-  margin-bottom: 46px;
+  background-color: #F4F4F4;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
 
   &__progress {
     &-count {
@@ -107,19 +112,5 @@
     &:last-child {
       background-color: #F6F6F6;
     }
-  }
-
-  &__submit {
-    align-self: center;
-    padding: 0;
-    width: 224px;
-    height: 55px;
-    background-color: transparent;
-    color: #E5B120;
-    text-transform: uppercase;
-    border: 2px solid #E5B120;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
   }
 }
