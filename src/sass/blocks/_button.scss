@@ -1,0 +1,22 @@
+.button {
+  padding: 0;
+  width: 156px;
+  height: 55px;
+  background-color: transparent;
+  color: #E5B120;
+  text-transform: uppercase;
+  border: 2px solid #E5B120;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_submit {
+    align-self: center;
+    width: 224px;
+    margin-bottom: 46px;
+  }
+}

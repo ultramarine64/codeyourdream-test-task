@@ -18,6 +18,7 @@ body, p {
 @import "base/fonts";
 @import "base/colors";
 @import "blocks/container";
+@import "blocks/button";
 @import "blocks/menu";
 @import "blocks/logo";
 @import "blocks/header";
@@ -25,5 +26,6 @@ body, p {
 @import "blocks/main_title";
 @import "blocks/about";
 @import "blocks/test";
+@import "blocks/subscribe";
 
 @import "media";
