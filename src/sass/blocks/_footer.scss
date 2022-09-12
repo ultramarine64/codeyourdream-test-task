@@ -1,0 +1,124 @@
+.footer {
+  background-color: #F2F2F2;
+
+  &__container {
+    padding-top: 39px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-top: 25px;
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      margin: 0 8px;
+    }
+
+    &-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      font-weight: 700;
+      color: #656565;
+      transition: 0.05s all;
+      padding: 4px;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    border: none;
+    margin: 46px 0 0 0;
+    padding: 0;
+    height: 1px;
+    background-color: #DFE1E3;
+  }
+
+  &__copyright {
+    margin-top: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #7B7B7B;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 39px;
+
+    &-link {
+      display: block;
+      width: 73px;
+      height: 73px;
+      transition: 0.1s all;
+
+      &_facebook {
+        background: url("../../images/social/icon-facebook.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-facebook-active.png") no-repeat;
+        }
+      }
+
+      &_google {
+        background: url("../../images/social/icon-googleplus.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-googleplus-active.png") no-repeat;
+        }
+      }
+
+      &_linkedin {
+        background: url("../../images/social/icon-linkedin.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-linkedin-active.png") no-repeat;
+        }
+      }
+
+      &_linkedin {
+        background: url("../../images/social/icon-linkedin.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-linkedin-active.png") no-repeat;
+        }
+      }
+
+      &_pinterest {
+        background: url("../../images/social/icon-pinterest.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-pinterest-active.png") no-repeat;
+        }
+      }
+
+      &_twitter {
+        background: url("../../images/social/icon-twitter.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-twitter-active.png") no-repeat;
+        }
+      }
+
+      &_youtube {
+        background: url("../../images/social/icon-youtube.png") no-repeat;
+
+        &:active {
+          background: url("../../images/social/icon-youtube-active.png") no-repeat;
+        }
+      }
+    }
+  }
+}
