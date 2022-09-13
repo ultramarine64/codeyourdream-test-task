@@ -18,9 +18,9 @@ function checkAnswersBeforeSubmit() {
       });
     }
 
-    for (questionsNodeList of questionsNodeLists) {
-      if (questionsNodeList.element.value) {
-        const questionIndex = unansweredQuestions.indexOf(questionsNodeList.questionNumber);
+    for (nodeList of questionsNodeLists) {
+      if (nodeList.element.value) {
+        const questionIndex = unansweredQuestions.indexOf(nodeList.questionNumber);
         unansweredQuestions.splice(questionIndex, 1);
       }
     }
@@ -38,6 +38,13 @@ function checkAnswersBeforeSubmit() {
         let questionBlock = document.getElementById(`question-block-${unansweredQuestion}`);
         let questionText = questionBlock.querySelector('span');
         questionText.classList.add('test__question-text_unanswered');
+
+        let unansweredQuestionInputs = questionBlock.querySelectorAll('input[type="radio"]');
+        for (input of unansweredQuestionInputs) {
+          input.addEventListener('input', () => {
+            questionText.classList.remove('test__question-text_unanswered');
+          }, { once: true });
+        }
       }
     }
   })
