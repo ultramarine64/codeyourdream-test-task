@@ -4,7 +4,7 @@
   &__container {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   &__progress {
@@ -20,14 +20,25 @@
 
       &-labels {
         display: flex;
-        width: 714px;
-        justify-content: space-around;
+
+        &-sections {
+          display: flex;
+          width: 714px;
+          justify-content: space-around;
+        }
       }
 
       &-label {
         font-size: 13px;
         color: #727272;
         letter-spacing: 0.2em;
+        text-align: center;
+
+        &_last {
+          align-self: center;
+          display: block;
+          width: calc(745px - 714px);
+        }
       }
 
       &-bar {
@@ -45,10 +56,14 @@
           background-color: #c4c4c4;
 
           &_first {
-            left: 357px;
+            left: 238px;
           }
 
           &_second {
+            left: 476px;
+          }
+
+          &_third {
             left: 714px;
           }
         }
@@ -108,41 +123,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      &-description {
-        width: 480px;
-      }
-
-      &-values {
-        display: flex;
-      }
-
-      // Желательно придумать, как сделать единый gap, но под дизайн не очень идет.
-      &-value {
-        &:nth-child(5) {
-          margin-left: 23px;
-        }
-        &:nth-child(4) {
-          margin-left: 24px;
-        }
-        &:nth-child(3) {
-          margin-left: 27px;
-        }
-        &:nth-child(2) {
-          margin-left: 34px;
-        }
-      }
     }
   }
 
   &__question {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 25px 0;
     border-bottom: 1px solid #EAEAEA;
-    padding-left: 32px;
-    padding-right: 38px;
 
     &-value {
       width: 26px;
@@ -171,7 +160,7 @@
     }
 
     &-text {
-      width: 440px;
+      width: 300px;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.5em;
@@ -179,14 +168,23 @@
       overflow-wrap: break-word;
       transition: 0.2s all;
 
+      &_left {
+        text-align: right;
+      }
+
+      &_right {
+        text-align: left;
+      }
+
       &_unanswered {
         color: #ff2828;
       }
     }
 
     &-values {
+      margin: 0 30px;
       display: flex;
-      gap: 66px;
+      gap: 38px;
     }
 
     &:nth-child(odd) {

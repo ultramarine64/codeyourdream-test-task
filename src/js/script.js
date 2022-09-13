@@ -36,13 +36,17 @@ function checkAnswersBeforeSubmit() {
 
       for (unansweredQuestion of unansweredQuestions) {
         let questionBlock = document.getElementById(`question-block-${unansweredQuestion}`);
-        let questionText = questionBlock.querySelector('span');
-        questionText.classList.add('test__question-text_unanswered');
+        let questionTexts = questionBlock.querySelectorAll('span');
+        for (questionText of questionTexts) {
+          questionText.classList.add('test__question-text_unanswered');
+        }
 
         let unansweredQuestionInputs = questionBlock.querySelectorAll('input[type="radio"]');
         for (input of unansweredQuestionInputs) {
           input.addEventListener('input', () => {
-            questionText.classList.remove('test__question-text_unanswered');
+            for (questionText of questionTexts) {
+              questionText.classList.remove('test__question-text_unanswered');
+            }
           }, { once: true });
         }
       }

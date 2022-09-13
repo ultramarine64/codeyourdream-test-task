@@ -83,12 +83,17 @@
             </div>
             <div class="test__progress-meter">
               <div class="test__progress-meter-labels">
-                <span class="test__progress-meter-label">SECTION ONE / 24 Questions</span>
-                <span class="test__progress-meter-label">SECTION TWO / 20 Questions</span>
+                <div class="test__progress-meter-labels-sections">
+                  <span class="test__progress-meter-label">SECTION ONE <br> 12 Questions</span>
+                  <span class="test__progress-meter-label">SECTION TWO <br> 32 Questions</span>
+                  <span class="test__progress-meter-label">SECTION THREE <br> 32 Questions</span>
+                </div>
+                <span class="test__progress-meter-label test__progress-meter-label_last">4</span>
               </div>
               <div class="test__progress-meter-bar">
                 <div class="test__progress-meter-bar-separator test__progress-meter-bar-separator_first"></div>
                 <div class="test__progress-meter-bar-separator test__progress-meter-bar-separator_second"></div>
+                <div class="test__progress-meter-bar-separator test__progress-meter-bar-separator_third"></div>
                 <span class="test__progress-meter-bar-value"></span>
               </div>
             </div>
@@ -97,19 +102,12 @@
             <div class="test__questions">
               <div class="test__questions-header">
                 <div class="test__questions-header-description">
-                  Indicate how often each statement is true for you:
-                </div>
-                <div class="test__questions-header-values">
-                  <span class="test__questions-header-value">Never</span>
-                  <span class="test__questions-header-value">Rarely</span>
-                  <span class="test__questions-header-value">Sometimes</span>
-                  <span class="test__questions-header-value">Usually</span>
-                  <span class="test__questions-header-value">Always</span>
+                  From each pair, choose the word that describes you best.
                 </div>
               </div>
               <div class="test__questions-main">
                 <div class="test__question" id="question-block-1">
-                  <span class="test__question-text">Being around lots of people energizes me</span>
+                  <span class="test__question-text test__question-text_left">I seek attention from others</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question1" id="question1never" value="never">
@@ -132,9 +130,10 @@
                       <label class="test__question-label" for="question1always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I avoid attention from others</span>
                 </div>
                 <div class="test__question" id="question-block-2">
-                  <span class="test__question-text">I am full of new ideas</span>
+                  <span class="test__question-text test__question-text_left">I like to try to innovate</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question2" id="question2never" value="never">
@@ -157,9 +156,10 @@
                       <label class="test__question-label" for="question2always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I like to use trusted methods</span>
                 </div>
                 <div class="test__question" id="question-block-3">
-                  <span class="test__question-text">I make sure other people know that I care about their feelings</span>
+                  <span class="test__question-text test__question-text_left">I put my needs first</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question3" id="question3never" value="never">
@@ -182,9 +182,10 @@
                       <label class="test__question-label" for="question3always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I put others' needs ahead of my own</span>
                 </div>
                 <div class="test__question" id="question-block-4">
-                  <span class="test__question-text">I prefer to follow a schedule</span>
+                  <span class="test__question-text test__question-text_left">I am often disorganized</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question4" id="question4never" value="never">
@@ -207,9 +208,10 @@
                       <label class="test__question-label" for="question4always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I keep myself organized</span>
                 </div>
                 <div class="test__question" id="question-block-5">
-                  <span class="test__question-text">People tell me I am too quiet</span>
+                  <span class="test__question-text test__question-text_left">I value my social status</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question5" id="question5never" value="never">
@@ -232,9 +234,10 @@
                       <label class="test__question-label" for="question5always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I value my privacy</span>
                 </div>
                 <div class="test__question" id="question-block-6">
-                  <span class="test__question-text">I have a vivid imagination</span>
+                  <span class="test__question-text test__question-text_left">I trust traditional values</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question6" id="question6never" value="never">
@@ -257,9 +260,10 @@
                       <label class="test__question-label" for="question6always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I question traditional values</span>
                 </div>
                 <div class="test__question" id="question-block-7">
-                  <span class="test__question-text">It's important to me to make decisions without being<br>swayed by emotions</span>
+                  <span class="test__question-text test__question-text_left">I make sure everyone is taken care of</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question7" id="question7never" value="never">
@@ -282,9 +286,10 @@
                       <label class="test__question-label" for="question7always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I look out for myself</span>
                 </div>
                 <div class="test__question" id="question-block-8">
-                  <span class="test__question-text">I'd rather go with the flow than have a set schedule</span>
+                  <span class="test__question-text test__question-text_left">I am always prepared</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question8" id="question8never" value="never">
@@ -307,9 +312,10 @@
                       <label class="test__question-label" for="question8always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I am often unprepared</span>
                 </div>
                 <div class="test__question" id="question-block-9">
-                  <span class="test__question-text">I enjoy chatting with new acquaintances</span>
+                  <span class="test__question-text test__question-text_left">I choose my friends carefully</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question9" id="question9never" value="never">
@@ -332,9 +338,10 @@
                       <label class="test__question-label" for="question9always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I make new friends quickly</span>
                 </div>
                 <div class="test__question" id="question-block-10">
-                  <span class="test__question-text">I like to do things differently, even if I'm not sure it will work</span>
+                  <span class="test__question-text test__question-text_left">I focus on real life</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question10" id="question10never" value="never">
@@ -357,9 +364,10 @@
                       <label class="test__question-label" for="question10always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I use my imagination</span>
                 </div>
                 <div class="test__question" id="question-block-11">
-                  <span class="test__question-text">I think of myself as a sensitive person</span>
+                  <span class="test__question-text test__question-text_left">I feel the pain of other people</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question11" id="question11never" value="never">
@@ -382,9 +390,10 @@
                       <label class="test__question-label" for="question11always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I am not easily affected by sad stories</span>
                 </div>
                 <div class="test__question" id="question-block-12">
-                  <span class="test__question-text">I make plans and stick to them</span>
+                  <span class="test__question-text test__question-text_left">I follow a plan</span>
                   <div class="test__question-values">
                     <div class="test__question-value">
                       <input type="radio" name="question12" id="question12never" value="never">
@@ -407,6 +416,7 @@
                       <label class="test__question-label" for="question12always"></label>
                     </div>
                   </div>
+                  <span class="test__question-text test__question-text_right">I act on impulse</span>
                 </div>
               </div>
             </div>
