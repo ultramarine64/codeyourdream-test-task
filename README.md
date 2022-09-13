@@ -3,7 +3,7 @@
 Тестовое задание для компании Code Your Dream.
 
 # Деплой
--
+https://ultramarine64.github.io/codeyourdream-test-task/
 
 # Установка
 Для установки потребуются установленные git и node.js.
