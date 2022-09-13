@@ -1,6 +1,8 @@
 .header {
   &__menu-and-logo-container {
-    padding: 30px 242px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

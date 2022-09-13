@@ -12,6 +12,11 @@
 
   &__item {
     margin: 0 10px;
+    transition: 0.1s all;
+
+    @media (max-width: 1400px) {
+      margin: 0 6px;
+    }
   }
 
   &__link {

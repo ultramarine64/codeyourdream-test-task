@@ -3,9 +3,10 @@
   height: 334px;
   background: url("../images/truityasset-test-banner-wide.png") center no-repeat;
   padding-top: 63px;
-  padding-left: 242px;
 
-  &__info {
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   &__title {
