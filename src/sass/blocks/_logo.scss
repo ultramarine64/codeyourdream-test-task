@@ -2,6 +2,10 @@
   width: 111px;
   height: auto;
 
+  @media (max-width: 992px) {
+    width: 100px;
+  }
+
   &_footer {
     width: 93px;
     height: auto;

@@ -10,6 +10,10 @@
     @media (max-width: 1200px) {
       max-width: 900px;
     }
+
+    @media (max-width: 992px) {
+      max-width: 720px;
+    }
   }
 
   &__progress {
@@ -31,12 +35,21 @@
         @media (max-width: 1200px) {
           width: 656px;
         }
+
+        @media (max-width: 992px) {
+          width: 480px;
+        }
       }
 
       &-label {
         font-size: 13px;
         color: #727272;
         letter-spacing: 0.2em;
+
+        @media (max-width: 992px) {
+          font-size: 12px;
+          letter-spacing: 0.1em;
+        }
       }
 
       &-bar {
@@ -49,6 +62,10 @@
 
         @media (max-width: 1200px) {
           width: 685px;
+        }
+
+        @media (max-width: 992px) {
+          width: 500px;
         }
 
         &-separator {
@@ -64,6 +81,10 @@
             @media (max-width: 1200px) {
               left: 328px;
             }
+
+            @media (max-width: 992px) {
+              left: 240px;
+            }
           }
 
           &_second {
@@ -71,6 +92,10 @@
 
             @media (max-width: 1200px) {
               left: 656px;
+            }
+
+            @media (max-width: 992px) {
+              left: 480px;
             }
           }
         }
@@ -95,11 +120,20 @@
       &-img {
         width: 26px;
         height: auto;
+
+        @media (max-width: 992px) {
+          width: 24px;
+          height: auto;
+        }
       }
 
       &-description {
         color: #727272;
         font-size: 17px;
+
+        @media (max-width: 992px) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -131,6 +165,12 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (max-width: 992px) {
+        letter-spacing: 0.15em;
+        font-size: 11.5px;
+        padding-right: 20px;
+      }
+
       &-description {
         width: 480px;
 
@@ -138,13 +178,16 @@
           width: 340px;
           line-height: 1.5em;
         }
+
+        @media (max-width: 992px) {
+          width: 280px;
+        }
       }
 
       &-values {
         display: flex;
       }
 
-      // Желательно придумать, как сделать единый gap, но под дизайн не очень идет.
       &-value {
         &:nth-child(5) {
           margin-left: 23px;
@@ -157,6 +200,23 @@
         }
         &:nth-child(2) {
           margin-left: 34px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        &-value {
+          &:nth-child(5) {
+            margin-left: 9px;
+          }
+          &:nth-child(4) {
+            margin-left: 8px;
+          }
+          &:nth-child(3) {
+            margin-left: 10px;
+          }
+          &:nth-child(2) {
+            margin-left: 20px;
+          }
         }
       }
     }
@@ -213,11 +273,20 @@
       @media (max-width: 1200px) {
         width: 420px;
       }
+
+      @media (max-width: 992px) {
+        font-size: 14px;
+        width: 310px;
+      }
     }
 
     &-values {
       display: flex;
       gap: 66px;
+
+      @media (max-width: 992px) {
+        gap: 46px;
+      }
     }
 
     &:nth-child(odd) {

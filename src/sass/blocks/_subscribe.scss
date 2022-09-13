@@ -34,6 +34,11 @@
     color: #4D4D4D;
     font-size: 17px;
     font-weight: 400;
+
+    @media (max-width: 992px) {
+      width: 600px;
+      text-align: center;
+    }
   }
 
   &__form {
@@ -41,6 +46,11 @@
     margin-bottom: 56px;
     display: flex;
     gap: 20px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &-input {
       padding-left: 21px;
