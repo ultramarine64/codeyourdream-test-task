@@ -85,7 +85,33 @@
     padding: 25px 0;
     border-bottom: 1px solid #EAEAEA;
     padding-left: 32px;
-    padding-right: 48px;
+    padding-right: 38px;
+
+    &-value {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+    }
+
+    & input {
+      position: absolute;
+      left: -9999px;
+    }
+
+    &-label {
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url("../../images/test/test-checkbox-off.png") no-repeat;
+    }
+
+    & input:checked + label {
+      display: block;
+      width: 26px;
+      height: 26px;
+      background: url("../../images/test/test-checkbox-on.png") no-repeat;
+    }
 
     &-text {
       width: 440px;
@@ -98,7 +124,7 @@
 
     &-values {
       display: flex;
-      gap: 78px;
+      gap: 66px;
     }
 
     &:nth-child(odd) {
