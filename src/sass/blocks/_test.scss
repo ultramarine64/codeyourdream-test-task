@@ -5,6 +5,11 @@
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 50px;
+    transition: 0.1s all;
+
+    @media (max-width: 1200px) {
+      max-width: 900px;
+    }
   }
 
   &__progress {
@@ -22,6 +27,10 @@
         display: flex;
         width: 714px;
         justify-content: space-around;
+
+        @media (max-width: 1200px) {
+          width: 656px;
+        }
       }
 
       &-label {
@@ -36,6 +45,11 @@
         background: linear-gradient(to bottom, #e6e6e6, #efefef);
         border-bottom: 1px solid #fefefe;
         position: relative;
+        transition: 0.1s all;
+
+        @media (max-width: 1200px) {
+          width: 685px;
+        }
 
         &-separator {
           position: absolute;
@@ -46,10 +60,18 @@
 
           &_first {
             left: 357px;
+
+            @media (max-width: 1200px) {
+              left: 328px;
+            }
           }
 
           &_second {
             left: 714px;
+
+            @media (max-width: 1200px) {
+              left: 656px;
+            }
           }
         }
 
@@ -111,6 +133,11 @@
 
       &-description {
         width: 480px;
+
+        @media (max-width: 1200px) {
+          width: 340px;
+          line-height: 1.5em;
+        }
       }
 
       &-values {
@@ -181,6 +208,10 @@
 
       &_unanswered {
         color: #ff2828;
+      }
+
+      @media (max-width: 1200px) {
+        width: 420px;
       }
     }
 
