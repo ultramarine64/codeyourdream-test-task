@@ -177,6 +177,11 @@
       line-height: 1.5em;
       color: #727272;
       overflow-wrap: break-word;
+      transition: 0.2s all;
+
+      &_unanswered {
+        color: #ff2828;
+      }
     }
 
     &-values {
@@ -194,6 +199,18 @@
 
     &:last-child {
       background-color: #F6F6F6;
+    }
+  }
+
+  &__notice {
+    align-self: center;
+    color: #ff2828;
+    display: none;
+
+    &-link {
+      text-decoration: none;
+      color: #ff2828;
+      font-weight: bold;
     }
   }
 }
